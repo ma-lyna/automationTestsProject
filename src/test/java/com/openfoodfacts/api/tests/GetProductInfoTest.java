@@ -1,12 +1,11 @@
-package com.openfoodfacts.api.readrequets.tests;
+package com.openfoodfacts.api.tests;
 
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class GetProductInfoTests extends TestBaseRead {
-
+public class GetProductInfoTest extends TestBaseApi {
     @Test
     void getProductName() {
         given()
@@ -18,5 +17,18 @@ public class GetProductInfoTests extends TestBaseRead {
                 .log().body()
                 .statusCode(200)
                 .body("product.product_name", is("Nutella"));
+    }
+
+    @Test
+    void getProductName() {
+        given()
+                .log().uri()
+                .when()
+                .get("v2/product/3")
+                .then()
+                .log().status()
+                .log().body()
+                .statusCode(200)
+             //   .body("product.product_name", is("Nutella"));
     }
 }

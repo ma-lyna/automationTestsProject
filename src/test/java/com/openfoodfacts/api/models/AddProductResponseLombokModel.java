@@ -1,4 +1,4 @@
-package com.openfoodfacts.api.writerequests.models;
+package com.openfoodfacts.api.models;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.openfoodfacts.api.writerequests.specs;
+package com.openfoodfacts.api.specs;
 
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.specification.RequestSpecification;
@@ -9,7 +9,7 @@ import static io.restassured.RestAssured.with;
 import static io.restassured.filter.log.LogDetail.BODY;
 import static io.restassured.filter.log.LogDetail.STATUS;
 
-public class ProductSpecWrite {
+public class ProductSpec {
     public static RequestSpecification addProductRequestSpec = with()
             .filter(withCustomTemplates())
             .contentType("multipart/form-data")
@@ -24,6 +24,21 @@ public class ProductSpecWrite {
             .log(STATUS)
             .log(BODY)
             .expectStatusCode(200)
+            .build();
+
+    public static RequestSpecification notAddProductRequestSpec = with()
+            .filter(withCustomTemplates())
+            .contentType("multipart/form-data")
+            .multiPart("code", "")
+            .multiPart("user_id", "etamkis")
+            .multiPart("password", "Testingproject")
+            .log().uri()
+            .log().method()
+            .log().body();
+
+    public static ResponseSpecification notAddProductResponseSpec = new ResponseSpecBuilder()
+            .log(STATUS)
+            .log(BODY)
             .build();
 
     public static RequestSpecification cropPhotoRequestSpec = with()
