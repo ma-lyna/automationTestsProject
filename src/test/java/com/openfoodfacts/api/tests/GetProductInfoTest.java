@@ -20,7 +20,7 @@ public class GetProductInfoTest extends TestBaseApi {
     }
 
     @Test
-    void getProductName() {
+    void notGetProductName() {
         given()
                 .log().uri()
                 .when()
@@ -28,7 +28,7 @@ public class GetProductInfoTest extends TestBaseApi {
                 .then()
                 .log().status()
                 .log().body()
-                .statusCode(200)
+                .statusCode(200);
              //   .body("product.product_name", is("Nutella"));
     }
 }
