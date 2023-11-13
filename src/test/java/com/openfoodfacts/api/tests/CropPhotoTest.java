@@ -20,7 +20,5 @@ public class CropPhotoTest extends TestBaseCgi {
                         .extract().as(CropPhotoResponseLombokModel.class));
         step("Check imagefield", () ->
                 assertEquals("front_en", response.getImagefield()));
-      //  step("Check status", () ->
-      //          assertEquals("status ok", response.getStatus()));
     }
 }

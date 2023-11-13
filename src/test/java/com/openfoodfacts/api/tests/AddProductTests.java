@@ -1,7 +1,7 @@
 package com.openfoodfacts.api.tests;
 
-import com.openfoodfacts.api.specs.ProductSpec;
 import com.openfoodfacts.api.models.AddProductResponseLombokModel;
+import com.openfoodfacts.api.specs.ProductSpec;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;

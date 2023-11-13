@@ -1,6 +1,7 @@
 package com.openfoodfacts.api.specs;
 
 import io.restassured.builder.ResponseSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
@@ -8,6 +9,7 @@ import static com.openfoodfacts.api.helpers.CustomAllureListener.withCustomTempl
 import static io.restassured.RestAssured.with;
 import static io.restassured.filter.log.LogDetail.BODY;
 import static io.restassured.filter.log.LogDetail.STATUS;
+import static io.restassured.parsing.Parser.JSON;
 
 public class ProductSpec {
     public static RequestSpecification addProductRequestSpec = with()
@@ -52,6 +54,35 @@ public class ProductSpec {
             .log().body();
 
     public static ResponseSpecification cropPhotoResponseSpec = new ResponseSpecBuilder()
+            .log(STATUS)
+            .log(BODY)
+            .expectStatusCode(200)
+            .build();
+
+    public static RequestSpecification getAllergensRequestSpec = with()
+            .filter(withCustomTemplates())
+          .contentType(ContentType.JSON)
+     //       .accept(JSON)
+            .queryParam("fields", "knowledge_panels")
+            .log().uri()
+            .log().body();
+       //     .contentType(JSON);
+        //    .baseUri("https://reqres.in");
+
+    public static ResponseSpecification getAllergensResponseSpec = new ResponseSpecBuilder()
+            .log(STATUS)
+            .log(BODY)
+            .expectStatusCode(200)
+            .build();
+
+    public static RequestSpecification getProductNameRequestSpec = with()
+//            .filter(withCustomTemplates())
+//            .contentType(ContentType.JSON)
+//            .queryParam("fields", "knowledge_panels")
+            .log().uri()
+            .log().body();
+
+    public static ResponseSpecification getProductNameResponseSpec = new ResponseSpecBuilder()
             .log(STATUS)
             .log(BODY)
             .expectStatusCode(200)

@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class CropPhotoResponseLombokModel {
-        private String imagefield, status;
-     private Image image;
+    private String imagefield, status;
+    private Image image;
 
         @lombok.Data
         public static class Image {

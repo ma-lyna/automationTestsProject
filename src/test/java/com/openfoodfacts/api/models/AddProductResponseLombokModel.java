@@ -4,7 +4,8 @@ import lombok.Data;
 
 @Data
 public class AddProductResponseLombokModel {
-        String status_verbose;
+        String code;
         Integer status;
+        String status_verbose;
 }
 
