@@ -2,6 +2,7 @@ package com.openfoodfacts.api.tests;
 
 import com.openfoodfacts.api.models.GetAllergLombokModel;
 import com.openfoodfacts.api.models.NotGetAllergLombokModel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.openfoodfacts.api.specs.ProductSpec.getAllergensRequestSpec;
@@ -13,6 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GetKnowledgePanelsTest extends TestBaseApi {
     @Test
+    @DisplayName("Get information about sugars for the particular product")
     void getAllergens() {
         GetAllergLombokModel response = step("Send request", () ->
                 given(getAllergensRequestSpec)
@@ -26,6 +28,7 @@ public class GetKnowledgePanelsTest extends TestBaseApi {
     }
 
     @Test
+    @DisplayName("Information about allergens is not shown in case of invalid product id")
     void notGetAllergens() {
         NotGetAllergLombokModel response = step("Send request", () ->
                 given(getAllergensRequestSpec)

@@ -61,13 +61,11 @@ public class ProductSpec {
 
     public static RequestSpecification getAllergensRequestSpec = with()
             .filter(withCustomTemplates())
-          .contentType(ContentType.JSON)
-     //       .accept(JSON)
+            .contentType(ContentType.JSON)
             .queryParam("fields", "knowledge_panels")
             .log().uri()
+            .log().method()
             .log().body();
-       //     .contentType(JSON);
-        //    .baseUri("https://reqres.in");
 
     public static ResponseSpecification getAllergensResponseSpec = new ResponseSpecBuilder()
             .log(STATUS)
@@ -76,10 +74,10 @@ public class ProductSpec {
             .build();
 
     public static RequestSpecification getProductNameRequestSpec = with()
-//            .filter(withCustomTemplates())
-//            .contentType(ContentType.JSON)
-//            .queryParam("fields", "knowledge_panels")
+            .filter(withCustomTemplates())
+            .contentType(ContentType.JSON)
             .log().uri()
+            .log().method()
             .log().body();
 
     public static ResponseSpecification getProductNameResponseSpec = new ResponseSpecBuilder()
