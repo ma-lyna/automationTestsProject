@@ -1,7 +1,8 @@
-package com.openfoodfacts.api.tests;
+package com.openfoodfacts.api.tests.cgipack;
 
 import com.openfoodfacts.api.models.AddProductResponseLombokModel;
-import com.openfoodfacts.api.specs.ProductSpec;
+import com.openfoodfacts.api.models.NotAddProductResponseLombokModel;
+import com.openfoodfacts.api.specs.CgiProductSpec;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,16 +11,16 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class AddProductTests extends TestBaseCgi {
+public class AddProductTests {
     @Test
     @DisplayName("A new product is successfully added")
     void newProductAddedTest() {
         AddProductResponseLombokModel response = step("Send request", () ->
-                given(ProductSpec.addProductRequestSpec)
+                given(CgiProductSpec.addProductRequestSpec)
                         .when()
                         .post("/product_jqm2.pl")
                         .then()
-                        .spec(ProductSpec.addProductResponseSpec)
+                        .spec(CgiProductSpec.addProductResponseSpec)
                         .extract().as(AddProductResponseLombokModel.class));
         step("Verify fields saved", () ->
                 assertEquals("fields saved", response.getStatus_verbose()));
@@ -27,15 +28,17 @@ public class AddProductTests extends TestBaseCgi {
              assertEquals(1, response.getStatus()));
    }
 
+
+
     @Test
     @DisplayName("A new product is not added")
     void newProductNotAddedTest() {
         AddProductResponseLombokModel response = step("Send request", () ->
-                given(ProductSpec.notAddProductRequestSpec)
+                given(CgiProductSpec.notAddProductRequestSpec)
                         .when()
                         .post("/product_jqm2.pl")
                         .then()
-                        .spec(ProductSpec.notAddProductResponseSpec)
+                        .spec(CgiProductSpec.notAddProductResponseSpec)
                         .extract().as(AddProductResponseLombokModel.class));
         step("Check status", () ->
                 assertEquals(0, response.getStatus()));
