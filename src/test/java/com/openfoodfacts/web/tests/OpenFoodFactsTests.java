@@ -11,8 +11,6 @@ import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
 
-@Tags({@Tag("UI")})
-
 public class OpenFoodFactsTests extends TestBase {
     OpenFoodFactsPage openFoodFactsPage = new OpenFoodFactsPage();
 
