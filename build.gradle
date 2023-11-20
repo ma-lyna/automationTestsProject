@@ -45,7 +45,20 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-test {
-    systemProperties(System.getProperties())
+tasks.withType(Test) {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
 }
+
+task apiAuto_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("apiAuto")
+    }
+}
+
+task uiAuto_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("uiAuto")
+    }
+}
+

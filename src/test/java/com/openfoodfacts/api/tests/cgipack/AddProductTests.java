@@ -1,9 +1,9 @@
 package com.openfoodfacts.api.tests.cgipack;
 
 import com.openfoodfacts.api.models.AddProductResponseLombokModel;
-import com.openfoodfacts.api.models.NotAddProductResponseLombokModel;
 import com.openfoodfacts.api.specs.CgiProductSpec;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AddProductTests {
     @Test
+    @Tag("apiAuto")
     @DisplayName("A new product is successfully added")
     void newProductAddedTest() {
         AddProductResponseLombokModel response = step("Send request", () ->
@@ -31,6 +32,7 @@ public class AddProductTests {
 
 
     @Test
+    @Tag("apiAuto")
     @DisplayName("A new product is not added")
     void newProductNotAddedTest() {
         AddProductResponseLombokModel response = step("Send request", () ->

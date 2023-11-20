@@ -17,6 +17,7 @@ public class OpenFoodFactsTests extends TestBase {
     OpenFoodFactsPage openFoodFactsPage = new OpenFoodFactsPage();
 
     @Test
+    @Tag("uiAuto")
     @Severity(SeverityLevel.BLOCKER)
     @Owner("ma-lyna")
     @DisplayName("Displaying of 'Nutella' results after successful search")

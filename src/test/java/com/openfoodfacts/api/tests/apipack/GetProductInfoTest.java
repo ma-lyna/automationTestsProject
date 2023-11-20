@@ -4,6 +4,7 @@ import com.openfoodfacts.api.models.GetProductNameLombokModel;
 import com.openfoodfacts.api.models.NotGetProductNameLombokModel;
 import com.openfoodfacts.api.specs.ApiProductSpec;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -12,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GetProductInfoTest {
     @Test
+    @Tag("apiAuto")
     @DisplayName("Get product name for a particular product id")
     void getProductName() {
         GetProductNameLombokModel response = step("Send request", () ->
@@ -26,6 +28,7 @@ public class GetProductInfoTest {
     }
 
     @Test
+    @Tag("apiAuto")
     @DisplayName("Information about product is not shown in case of invalid product id")
     void notGetProductName() {
         NotGetProductNameLombokModel response = step("Send request", () ->

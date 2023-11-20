@@ -3,6 +3,7 @@ package com.openfoodfacts.api.tests.cgipack;
 import com.openfoodfacts.api.models.CropPhotoResponseLombokModel;
 import com.openfoodfacts.api.specs.CgiProductSpec;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
@@ -11,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CropPhotoTest {
     @Test
+    @Tag("apiAuto")
     @DisplayName("Photo is successfully cropped")
     void photoIsCroppedTest() {
         CropPhotoResponseLombokModel response = step("Send request", () ->
