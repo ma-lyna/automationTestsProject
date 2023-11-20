@@ -1,5 +1,6 @@
 package com.openfoodfacts.web.tests;
 
+import com.openfoodfacts.web.pages.OpenFoodFactsPage;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -12,8 +13,8 @@ import static io.qameta.allure.Allure.step;
 
 @Tags({@Tag("UI")})
 
-public class OpenFoodFacts extends TestBase {
-    OpenFoodFacts openFoodFacts = new OpenFoodFacts();
+public class OpenFoodFactsTests extends TestBase {
+    OpenFoodFactsPage openFoodFactsPage = new OpenFoodFactsPage();
 
     @Test
     @Severity(SeverityLevel.BLOCKER)
@@ -21,17 +22,17 @@ public class OpenFoodFacts extends TestBase {
     @DisplayName("Displaying of 'Nutella' results after successful search")
     void checkSuccessfulSearch() {
         step("Fill in the 'Search' field with 'Nutella'", () -> {
-            openFoodFacts.fillSearchField("Nutella");
+            openFoodFactsPage.fillInSearch("Nutella");
         });
-//        step("Tap on the 'Search' button", () -> {
-//            openFoodFacts.tapToSearch();
-//        });
-//        step("Check displaying of results after search", () -> {
-//            openFoodFacts.checkSearchResults();
-//        });
-//        step("Verify the displayed result is 'Nutella' result", () -> {
-//            openFoodFacts.checkQaResult();
-//        });
+        step("Tap on the 'Search' button", () -> {
+            openFoodFactsPage.tapToSearch();
+        });
+        step("Observe search results", () -> {
+            openFoodFactsPage.checkSearchResults();
+        });
+        step("Verify the displayed result is 'Nutella' result", () -> {
+            openFoodFactsPage.checkQaResult();
+        });
     }
 
 //    @Test
