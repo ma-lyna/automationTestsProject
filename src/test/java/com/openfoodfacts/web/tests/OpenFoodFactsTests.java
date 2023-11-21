@@ -33,25 +33,25 @@ public class OpenFoodFactsTests extends TestBase {
         });
     }
 
-//    @Test
-//    @Tag("uiAuto")
-//    @Severity(SeverityLevel.BLOCKER)
-//    @Owner("ma-lyna")
-//    @DisplayName("Observe displaying of product info page")
-//    void checkProductInfoPage() {
-//        step("Fill in the 'Search' field with 'Nutella'", () -> {
-//            openFoodFactsPage.fillInSearch("Nutella");
-//        });
-//        step("Tap on the 'Search' button", () -> {
-//            openFoodFactsPage.tapToSearch();
-//        });
-//        step("Tap on any search result", () -> {
-//            openFoodFactsPage.tapOnResult();
-//        });
-//        step("Verify the page with product info is displayed", () -> {
-//            openFoodFactsPage.verifyInfoPageExist();
-//        });
-//    }
+    @Test
+    @Tag("uiAuto")
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("ma-lyna")
+    @DisplayName("Observe displaying of product info page")
+    void checkProductInfoPage() {
+        step("Fill in the 'Search' field with 'Nutella'", () -> {
+            openFoodFactsPage.fillInSearch("Nutella");
+        });
+        step("Tap on the 'Search' button", () -> {
+            openFoodFactsPage.tapToSearch();
+        });
+        step("Tap on any search result", () -> {
+            openFoodFactsPage.tapOnResult();
+        });
+        step("Verify the page with product info is displayed", () -> {
+            openFoodFactsPage.verifyInfoPageExist();
+        });
+    }
 
 //    @Test
 //    @Severity(SeverityLevel.CRITICAL)
