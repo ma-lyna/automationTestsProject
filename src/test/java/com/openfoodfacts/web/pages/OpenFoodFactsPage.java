@@ -11,9 +11,9 @@ public class OpenFoodFactsPage {
             searchInput = $(".columns input[name ='search_terms']"),
             searchBtn = $(".button.postfix"),
             searchResults = $(".row"),
-            qaResult = $(".list_product_name.v-space-tiny");
-//            specifiedExpRb = $(".nova-control--GtG8Kpo7kAMGijnRbxtY:nth-child(7) .bloko-form-item"),
-//            specifiedExp = $(".vacancy-serp-item__layout span[data-qa ='vacancy-serp__vacancy-compensation']"),
+            nutellaResult = $(".list_product_name.v-space-tiny"),
+            searchResult = $(".list_product_content"),
+            infoPage = $(".card-section]");
 //            extSearchBtn = $(".supernova-navi-advanced-search-icon"),
 //            extPageArea = $(".row-content form"),
 //            createCvBtn = $(byText("Создать резюме")),
@@ -41,22 +41,22 @@ public class OpenFoodFactsPage {
         return this;
     }
 
-    public OpenFoodFactsPage checkQaResult () {
-        qaResult.shouldHave(text("Nutella"));
+    public OpenFoodFactsPage checkNutellaResult() {
+        nutellaResult.shouldHave(text("Nutella"));
 
         return this;
     }
-//
-//    public OpenFoodFactsPage checkSpecifiedExp () {
-//        specifiedExpRb.scrollTo().click();
-//
-//        return this;
-//    }
-//    public OpenFoodFactsPage verifySpecifiedExpExist () {
-//        specifiedExp.should(exist);
-//
-//        return this;
-//    }
+
+    public OpenFoodFactsPage tapOnResult () {
+        searchResult.click();
+
+        return this;
+    }
+    public OpenFoodFactsPage verifyInfoPageExist () {
+        infoPage.should(exist);
+
+        return this;
+    }
 //
 //    public OpenFoodFactsPage tapOnExtSearch () {
 //        extSearchBtn.click();

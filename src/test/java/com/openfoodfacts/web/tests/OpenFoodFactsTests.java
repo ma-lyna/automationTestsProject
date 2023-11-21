@@ -29,29 +29,30 @@ public class OpenFoodFactsTests extends TestBase {
             openFoodFactsPage.checkSearchResults();
         });
         step("Verify the displayed result is 'Nutella' result", () -> {
-            openFoodFactsPage.checkQaResult();
+            openFoodFactsPage.checkNutellaResult();
         });
     }
 
 //    @Test
-//    @Severity(SeverityLevel.CRITICAL)
+//    @Tag("uiAuto")
+//    @Severity(SeverityLevel.BLOCKER)
 //    @Owner("ma-lyna")
-//    @DisplayName("Check filter by experience from 1 to 3 years")
-//    void checkJobsWithOneAndThreeExp() {
-//        step("Fill in the 'Search' field with 'QA'", () -> {
-//            openFoodFacts.fillInSearchField("QA");
+//    @DisplayName("Observe displaying of product info page")
+//    void checkProductInfoPage() {
+//        step("Fill in the 'Search' field with 'Nutella'", () -> {
+//            openFoodFactsPage.fillInSearch("Nutella");
 //        });
-//        step("Tap on the 'Найти работу' button'", () -> {
-//            openFoodFacts.tapToSearch();
+//        step("Tap on the 'Search' button", () -> {
+//            openFoodFactsPage.tapToSearch();
 //        });
-//        step("Choose the filter 'from 1 to 3 years of experience' ", () -> {
-//            openFoodFacts.checkSpecifiedExp();
+//        step("Tap on any search result", () -> {
+//            openFoodFactsPage.tapOnResult();
 //        });
-//        step("Verify the positions with experience from 1 to 3 years are displayed", () -> {
-//            openFoodFacts.verifySpecifiedExpExist();
+//        step("Verify the page with product info is displayed", () -> {
+//            openFoodFactsPage.verifyInfoPageExist();
 //        });
 //    }
-//
+
 //    @Test
 //    @Severity(SeverityLevel.CRITICAL)
 //    @Owner("ma-lyna")
