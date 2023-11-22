@@ -14,7 +14,7 @@ public class OpenFoodFactsPage {
             searchResults = $(".row"),
             nutellaResult = $(".list_product_name.v-space-tiny"),
             searchResult = $("#preferences_switch_in_list_of_products_switch"),
-            infoPage = $(byText("Poor match"));
+            infoPage = $(byText("Poor match 31%"));
 //            extSearchBtn = $(".supernova-navi-advanced-search-icon"),
 //            extPageArea = $(".row-content form"),
 //            createCvBtn = $(byText("Создать резюме")),
