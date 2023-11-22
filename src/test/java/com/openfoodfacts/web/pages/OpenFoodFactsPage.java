@@ -13,7 +13,7 @@ public class OpenFoodFactsPage {
             searchResults = $(".row"),
             nutellaResult = $(".list_product_name.v-space-tiny"),
             searchResult = $("#preferences_switch_in_list_of_products_switch"),
-            infoPage = $("#products_match_all]");
+            infoPage = $(".list_product_banner.list_product_banner_poor_match]");
 //            extSearchBtn = $(".supernova-navi-advanced-search-icon"),
 //            extPageArea = $(".row-content form"),
 //            createCvBtn = $(byText("Создать резюме")),
