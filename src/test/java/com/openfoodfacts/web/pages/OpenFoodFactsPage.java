@@ -12,7 +12,7 @@ public class OpenFoodFactsPage {
             searchBtn = $(".button.postfix"),
             searchResults = $(".row"),
             nutellaResult = $(".list_product_name.v-space-tiny"),
-            searchResult = $(".h-space-tiny"),
+            searchResult = $("#preferences_selected.h-space-tiny"),
             infoPage = $("#products_match_all]");
 //            extSearchBtn = $(".supernova-navi-advanced-search-icon"),
 //            extPageArea = $(".row-content form"),
