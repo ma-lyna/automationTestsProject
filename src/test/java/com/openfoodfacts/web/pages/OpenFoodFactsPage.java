@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class OpenFoodFactsPage {
@@ -13,7 +14,7 @@ public class OpenFoodFactsPage {
             searchResults = $(".row"),
             nutellaResult = $(".list_product_name.v-space-tiny"),
             searchResult = $("#preferences_switch_in_list_of_products_switch"),
-            infoPage = $(".list_product_banner.list_product_banner_poor_match]");
+            infoPage = $(byText("Poor match"));
 //            extSearchBtn = $(".supernova-navi-advanced-search-icon"),
 //            extPageArea = $(".row-content form"),
 //            createCvBtn = $(byText("Создать резюме")),
