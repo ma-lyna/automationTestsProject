@@ -15,15 +15,13 @@
   - <a href="#console-ui"> UI
   - <a href="#console-api"> API
 
-* <a href="#jenkins">Jenkins job</a>
+* <a href="#jenkins">Jenkins jobs</a>
 
 * <a href="#allure">Allure reports</a>
 
 * <a href="#telegram">Telegram reports</a>
 
 * <a href="#testops">Integration with Allure TestOps</a>
-
-* <a href="#video">Launch test via Selenoid</a>
 
 
 ## <a id="tools"></a> Технологии и инструменты
