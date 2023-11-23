@@ -1,5 +1,6 @@
 # UI и API autotests for [openfoodfacts](https://world.openfoodfacts.org/)
 
+<img alt="openfoodfacts" src="readme/screenshots/openfoodfacts.PNG">
 
 ## <a id="list"></a> Content 
 
