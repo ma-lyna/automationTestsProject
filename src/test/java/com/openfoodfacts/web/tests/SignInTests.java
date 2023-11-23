@@ -40,7 +40,7 @@ public class SignInTests extends TestBase {
     @Tag("uiAuto")
     @Severity(SeverityLevel.NORMAL)
     @Owner("ma-lyna")
-    @DisplayName("Successful sign in")
+    @DisplayName("Unsuccessful sign in")
     void checkUnsuccessfulSearch() {
         step("Open the 'Sign in' page", () -> {
             signInPage.openSignInPage();

@@ -45,11 +45,17 @@
 <a id="cases-ui"></a>UI-cases:
 
 :heavy_check_mark: Successful sign in
-:heavy_check_mark: Unuccessful sign in
+
+:heavy_check_mark: Unsuccessful sign in
+
 :heavy_check_mark: Observe QR code to download the app  
+
 :heavy_check_mark: Observe button for contributors Skill Pool form  
+
 :heavy_check_mark: Observe search form link on the 'Discover' page 
-:heavy_check_mark: Displaying of 'Nutella' results after successful search  
+
+:heavy_check_mark: Displaying of 'Nutella' results after successful search 
+
 :heavy_check_mark: Observe displaying of the banner 'Poor match 31%'  
   
 <a id="cases-api"></a>API-cases:
