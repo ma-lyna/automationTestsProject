@@ -77,16 +77,21 @@
 <a href="#list">Content</a>
 
 ## 	<a id="integrations"></a> Integrations
-:heavy_check_mark: Launch tests in Jenkins   
+:heavy_check_mark: Launch tests in Jenkins  
+
 :heavy_check_mark: Allure Report + SelenideLogger.addListener + step()   
+
 :heavy_check_mark: Notifications in Telegram 
+
 :heavy_check_mark: Allure TestOps    
+
 :heavy_check_mark: Selenoid   
+
 :heavy_check_mark: Owner   
 
 <a href="#list">Content</a>
 
-## :desktop_computer: <a id="console"></a> Launch via terminal
+## <a id="console"></a> Launch via terminal
   
 ### <a id="console-ui"></a>Launch UI tests locally
 
@@ -119,34 +124,34 @@ clean apiAuto_test "-Dname=${NAME}"
 
 <a href="#list">Content</a>
 
-## <a id="jenkins"></a> <img width="30" alt="Jenkins" src="readme/icons/Jenkins_ico.svg"> Job for UI tests in [Jenkins](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/)
+## <a id="jenkins"></a> Job for UI tests in [Jenkins](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/)
 
-<img alt="Jenkins_screenshot_ui" src="readme/screenshots/Jenkins_ui.PNG">
+<img alt="Jenkins_screenshot_ui" src="readme/screenshots/Jenkins_ui.png">
 
 ## <a id="jenkins"></a> <img width="30" alt="Jenkins" src="readme/icons/Jenkins_ico.svg"> Job for API tests in in [Jenkins](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/)
 
-<img alt="Jenkins_screenshot_api" src="readme/screenshots/Jenkins_api.PNG">
+<img alt="Jenkins_screenshot_api" src="readme/screenshots/Jenkins_api.png">
 
-<a href="#list">К Содержанию</a>
+<a href="#list">Content</a>
 
-## <a id="allure"></a> <img width="30" alt="Allure" src="readme/icons/Allure_ico.svg"> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
-## <a id="allure"></a> <img width="30" alt="Allure" src="readme/icons/Allure_ico.svg"> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
+## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
+## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
 
 :information_source: Allure Reports   
 
-<img alt="AllureReport_screenshot" src="readme/screenshots/AllureReport.PNG">
-<img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportTest.PNG">
+<img alt="AllureReport_screenshot" src="readme/screenshots/AllureReportUI.png">
+<img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportUI.png">
 
 <a href="#list">Content</a>
 
-## <a id="telegram"></a> <img width="30" alt="Telegram" src="readme/icons/Telegram_ico.svg"> Отчёт в Telegram
+## <a id="telegram"></a>Telegram reports
+
 :information_source: Тelegram notifications
 
-<img alt="Telegram_screenshot" src="readme/screenshots/Telegram.PNG">
+<img alt="Telegram_screenshot" src="readme/screenshots/Telegram.jpeg">
 
 <a href="#list">Content</a>
 
-## <a id="testops"> <img width="25" alt="TestOps" src="readme/icons/TestOpspng.png"> Integration with [Allure TestOps](https://allure.autotests.cloud/project/3840/test-cases/27753?treeId=0)
+## <a id="testops"> Integration with [Allure TestOps](https://allure.autotests.cloud/project/3840/test-cases/27753?treeId=0)
   
-<img alt="AllureTestOpsLaunches_screenshot" src="readme/screenshots/AllureTestOpsLaunches.PNG">
-<img alt="AllureTestOpsLaunchesTreeTests_screenshot" src="readme/screenshots/AllureTestOpsLaunchesTreeTests.PNG">
+<img alt="AllureTestOpsLaunches_screenshot" src="readme/screenshots/AllureTestOps.png">
