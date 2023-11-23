@@ -128,19 +128,22 @@ clean apiAuto_test "-Dname=${NAME}"
 
 <img alt="Jenkins_screenshot_ui" src="readme/screenshots/Jenkins_ui.png">
 
-## <a id="jenkins"></a> <img width="30" alt="Jenkins" src="readme/icons/Jenkins_ico.svg"> Job for API tests in in [Jenkins](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/)
+## <a id="jenkins"></a> Job for API tests in in [Jenkins](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/)
 
 <img alt="Jenkins_screenshot_api" src="readme/screenshots/Jenkins_api.png">
 
 <a href="#list">Content</a>
 
-## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
-## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
-
-:information_source: Allure Reports   
+:information_source: Allure Reports
 
 <img alt="AllureReport_screenshot" src="readme/screenshots/AllureReportUI.png">
+
+## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
+
 <img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportUI.png">
+
+## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
+
 
 <a href="#list">Content</a>
 
