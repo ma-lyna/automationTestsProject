@@ -134,7 +134,7 @@ clean apiAuto_test "-Dname=${NAME}"
 
 <a href="#list">Content</a>
 
-:information_source: Allure Reports
+Allure Reports
 
 ## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
 
@@ -148,7 +148,7 @@ clean apiAuto_test "-Dname=${NAME}"
 
 ## <a id="telegram"></a>Telegram reports
 
-:information_source: Тelegram notifications
+Тelegram notifications
 
 <img alt="Telegram_screenshot" src="readme/screenshots/Telegram.jpeg">
 
