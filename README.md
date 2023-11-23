@@ -42,7 +42,7 @@
 
 
 ## <a id="cases"></a> Tests
-<a id="cases-ui"></a>UI-cases:
+<a id="cases-ui"></a>UI cases:
 
 :heavy_check_mark: Successful sign in
 
@@ -58,14 +58,20 @@
 
 :heavy_check_mark: Observe displaying of the banner 'Poor match 31%'  
   
-<a id="cases-api"></a>API-cases:
+<a id="cases-api"></a>API cases:
   
-:heavy_check_mark: Get information about sugars for the particular product  
+:heavy_check_mark: Get information about sugars for the particular product 
+
 :heavy_check_mark: Information about allergens is not shown in case of invalid product id
+
 :heavy_check_mark: Get product name for a particular product id
+
 :heavy_check_mark: Information about product is not shown in case of invalid product id 
+
 :heavy_check_mark: A new product is successfully added 
+
 :heavy_check_mark: A new product is not added  
+
 :heavy_check_mark: Photo is successfully cropped  
 
 <a href="#list">Content</a>
