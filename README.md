@@ -136,14 +136,13 @@ clean apiAuto_test "-Dname=${NAME}"
 
 :information_source: Allure Reports
 
-<img alt="AllureReport_screenshot" src="readme/screenshots/AllureReportUI.png">
-
 ## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
 
-<img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportUI.png">
+<img alt="AllureReport_screenshot" src="readme/screenshots/AllureReportUI.png">
 
 ## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
 
+<img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportUI.png">
 
 <a href="#list">Content</a>
 
