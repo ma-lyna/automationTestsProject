@@ -24,7 +24,7 @@
 * <a href="#testops">Integration with Allure TestOps</a>
 
 
-## <a id="tools"></a> Технологии и инструменты
+## <a id="tools"></a> Tools and technologies
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img width="75" alt="IDEA" src="readme/icons/Intelij_IDEA.svg"></a>
 <a href="https://www.java.com/"><img width="75" alt="JAVA" src="readme/icons/Java.svg"></a>
