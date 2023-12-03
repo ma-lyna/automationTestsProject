@@ -29,7 +29,7 @@
 <p align="center">
 <a href="https://www.jetbrains.com/idea/"><img width="75" alt="IDEA" src="readme/icons/Intelij_IDEA.svg"></a>
 <a href="https://www.java.com/"><img width="75" alt="JAVA" src="readme/icons/Java.svg"></a>
-<a href="https://github.com/"><img width="75" alt="Github" src="readme/icons/GitHub.svg"></a>
+<a href="https://github.com/"><img width="75" alt="Github" src="readme/icons/Github.svg"></a>
 <a href="https://junit.org/junit5/"><img width="75" alt="JUnit5" src="readme/icons/JUnit5.svg"></a>
 <a href="https://gradle.org/"><img width="75" alt="Gradle" src="readme/icons/Gradle.svg"></a>
 <a href="https://selenide.org/"><img width="75" alt="Selenide" src="readme/icons/Selenide.svg"></a>
