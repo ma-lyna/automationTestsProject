@@ -27,17 +27,17 @@
 
 ## <a id="tools"></a> Tools and technologies
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img width="75" alt="IDEA" src="readme/icons/Intelij_IDEA.svg"></a>
-<a href="https://www.java.com/"><img width="75" alt="JAVA" src="readme/icons/Java.svg"></a>
-<a href="https://github.com/"><img width="75" alt="Github" src="readme/icons/Github.svg"></a>
-<a href="https://junit.org/junit5/"><img width="75" alt="JUnit5" src="readme/icons/JUnit5.svg"></a>
-<a href="https://gradle.org/"><img width="75" alt="Gradle" src="readme/icons/Gradle.svg"></a>
-<a href="https://selenide.org/"><img width="75" alt="Selenide" src="readme/icons/Selenide.svg"></a>
-<a href="https://aerokube.com/selenoid/"><img width="75" alt="Selenoid" src="readme/icons/Selenoid.svg"></a>
-<a href="https://github.com/allure-framework/allure2"><img width="75" alt="Allure" src="readme/icons/Allure.svg"></a>
-<a href="https://qameta.io"><img width="75" alt="TestOps" src="readme/icons/TestOps.svg"></a>
-<a href="https://www.jenkins.io/"><img width="75" alt="Jenkins" src="readme/icons/Jenkins.svg"></a>
-<a href="https://telegram.org/"><img width="75" alt="Telegram" src="readme/icons/Telegram.svg"></a>
+<a href="https://www.jetbrains.com/idea/"><img width="50" alt="IDEA" src="readme/icons/Intelij_IDEA.svg"></a>
+<a href="https://www.java.com/"><img width="50" alt="JAVA" src="readme/icons/Java.svg"></a>
+<a href="https://github.com/"><img width="50" alt="Github" src="readme/icons/Github.svg"></a>
+<a href="https://junit.org/junit5/"><img width="50" alt="JUnit5" src="readme/icons/JUnit5.svg"></a>
+<a href="https://gradle.org/"><img width="50" alt="Gradle" src="readme/icons/Gradle.svg"></a>
+<a href="https://selenide.org/"><img width="50" alt="Selenide" src="readme/icons/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="50" alt="Selenoid" src="readme/icons/Selenoid.svg"></a>
+<a href="https://github.com/allure-framework/allure2"><img width="50" alt="Allure" src="readme/icons/Allure.svg"></a>
+<a href="https://qameta.io"><img width="50" alt="TestOps" src="readme/icons/TestOps.svg"></a>
+<a href="https://www.jenkins.io/"><img width="50" alt="Jenkins" src="readme/icons/Jenkins.svg"></a>
+<a href="https://telegram.org/"><img width="50" alt="Telegram" src="readme/icons/Telegram.svg"></a>
 </p>
 
 
