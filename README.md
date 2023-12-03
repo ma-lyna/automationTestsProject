@@ -35,7 +35,7 @@
 <a href="https://selenide.org/"><img width="75" alt="Selenide" src="readme/icons/Selenide.svg"></a>
 <a href="https://aerokube.com/selenoid/"><img width="75" alt="Selenoid" src="readme/icons/Selenoid.svg"></a>
 <a href="https://github.com/allure-framework/allure2"><img width="75" alt="Allure" src="readme/icons/Allure.svg"></a>
-<a href="https://qameta.io"><img width="55" alt="TestOps" src="readme/icons/TestOps.svg"></a>
+<a href="https://qameta.io"><img width="75" alt="TestOps" src="readme/icons/TestOps.svg"></a>
 <a href="https://www.jenkins.io/"><img width="75" alt="Jenkins" src="readme/icons/Jenkins.svg"></a>
 <a href="https://telegram.org/"><img width="75" alt="Telegram" src="readme/icons/Telegram.svg"></a>
 </p>
