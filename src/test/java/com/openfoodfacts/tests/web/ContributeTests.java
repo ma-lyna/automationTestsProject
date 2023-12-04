@@ -17,7 +17,7 @@ public class ContributeTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Owner("ma-lyna")
     @DisplayName("Observe button for contributors Skill Pool form")
-    void checkskillFormBtn() {
+    void checkSkillFormBtn() {
         step("Open the 'Contribute' page", () -> {
             contributePage.openContributePage();
         });

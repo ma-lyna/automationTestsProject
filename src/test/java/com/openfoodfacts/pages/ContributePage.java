@@ -12,7 +12,7 @@ public class ContributePage {
             btnSkillForm = $(byText("Contributors Skill Pool form in ENG/FR"));
 
     public ContributePage openContributePage() {
-        open("/contribute/");
+        open("/contribute");
 
         return this;
     }

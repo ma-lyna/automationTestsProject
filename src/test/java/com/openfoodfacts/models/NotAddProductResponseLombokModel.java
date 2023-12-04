@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class NotAddProductResponseLombokModel {
-        Integer status;
+        Integer status; //объединить три класса Not в один
         String status_verbose;
 }
 

@@ -18,7 +18,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
 
-
+//много пустого места
 
 
 
@@ -34,20 +34,21 @@ public class TestBase {
         capabilities.setCapability("selenoid:options", value);
 
         Configuration.browserCapabilities = capabilities;
+
     }
 
 
     @BeforeEach
     void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-    open("https://world.openfoodfacts.org");
+    open("https://world.openfoodfacts.org"); //поправить
     }
 
     @AfterEach
     void afterEach() {
         Attach.screenShotAs("Last screenshot");
         Attach.pageSource();
-        Attach.browserConsoleLog();
+        Attach.browserConsoleLog(); //сделать проверку на браузер при сборе логов
         Attach.addVideo();
 
         Selenide.closeWebDriver();

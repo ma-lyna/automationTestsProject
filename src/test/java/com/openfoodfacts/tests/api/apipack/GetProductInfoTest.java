@@ -15,11 +15,11 @@ public class GetProductInfoTest {
     @Test
     @Tag("apiAuto")
     @DisplayName("Get product name for a particular product id")
-    void getProductName() {
+    void getProductName() { //подумать над названиями всех тестовых методов
         GetProductNameLombokModel response = step("Send request", () ->
                     given(ApiProductSpec.getProductNameRequestSpec)
                             .when()
-                            .get("v2/product/3017620422003")
+                            .get("v2/product/3017620422003")// вынести в переменную
                             .then()
                             .spec(ApiProductSpec.getProductNameResponseSpec)
                             .extract().as(GetProductNameLombokModel.class));
@@ -34,7 +34,7 @@ public class GetProductInfoTest {
         NotGetProductNameLombokModel response = step("Send request", () ->
                 given(ApiProductSpec.getProductNameRequestSpec)
                         .when()
-                        .get("v2/product/333")
+                        .get("v2/product/333")// вынести в переменную
                         .then()
                         .spec(ApiProductSpec.getProductNameResponseSpec)
                         .extract().as(NotGetProductNameLombokModel.class));

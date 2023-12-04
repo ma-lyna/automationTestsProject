@@ -35,7 +35,7 @@ public class SearchPage {
         return this;
     }
 
-    public SearchPage checkNutellaResult() {
+    public SearchPage checkNutellaResult() { //заменить на универсальный
         nutellaResult.shouldHave(text("Nutella"));
 
         return this;

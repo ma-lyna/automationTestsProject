@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 public class GetProductNameLombokModel {
-    String code;
+    String code; // поправить приватность
     Integer status;
     String status_verbose;
     private Product product;

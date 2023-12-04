@@ -32,12 +32,12 @@ public class SearchTests extends TestBase {
             searchPage.checkNutellaResult();
         });
     }
-
+// добавить тест что баннер Poor match выключен по умолчанию
     @Test
     @Tag("uiAuto")
     @Severity(SeverityLevel.NORMAL)
     @Owner("ma-lyna")
-    @DisplayName("Observe displaying of the banner 'Poor match 31%'")
+    @DisplayName("Observe displaying of the banner 'Poor match 31%'")// заменить на тест что при включении свитчера виден банер Poor match
     void checkProductBanner() {
         step("Fill in the 'Search' field with 'Nutella'", () -> {
             searchPage.fillInSearch("Nutella");

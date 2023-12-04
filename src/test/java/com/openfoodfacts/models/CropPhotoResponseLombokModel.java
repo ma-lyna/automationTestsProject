@@ -8,7 +8,7 @@ public class CropPhotoResponseLombokModel {
     private Image image;
     @lombok.Data
     public static class Image {
-        private String display_url;
+        private String display_url;  //посмотреть про аннотацию @JsonProperty
     }
 }
 

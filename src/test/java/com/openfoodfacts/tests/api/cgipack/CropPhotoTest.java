@@ -10,7 +10,7 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CropPhotoTest {
+public class CropPhotoTest { //удалить
     @Test
     @Tag("apiAuto")
     @DisplayName("Photo is successfully cropped")

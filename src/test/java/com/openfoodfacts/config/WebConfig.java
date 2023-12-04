@@ -23,6 +23,6 @@ public interface WebConfig extends Config {
         @DefaultValue("100.0")
         String browserVersion();
 
-        @Key("remoteUrl")
+        @Key("remoteUrl")//добавить урл селенойда
         String remoteUrl();
 }

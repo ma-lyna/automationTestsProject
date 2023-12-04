@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import static io.qameta.allure.Allure.step;
 
 public class AppTests extends TestBase {
-    AppPage appPage = new AppPage();
+     AppPage appPage = new AppPage(); //сделать приватным либо вынести в testBase
     @Test
     @Tag("uiAuto")
     @Severity(SeverityLevel.NORMAL)

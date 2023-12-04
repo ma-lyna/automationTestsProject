@@ -17,7 +17,7 @@ public class DiscoverTests extends TestBase {
     @Severity(SeverityLevel.NORMAL)
     @Owner("ma-lyna")
     @DisplayName("Observe search form link on the 'Discover' page")
-    void checksearchFormLink() {
+    void checkSearchFormLink() {
         step("Open the 'Discover' page", () -> {
             discoverPage.openDiscoverPage();
         });

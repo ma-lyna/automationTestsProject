@@ -17,7 +17,7 @@ public class SignInPage {
             errorText = $(withText("Incorrect user name or password"));
 
     public SignInPage openSignInPage() {
-        open("/cgi/session.pl/");
+        open("/cgi/session.pl");
 
         return this;
     }

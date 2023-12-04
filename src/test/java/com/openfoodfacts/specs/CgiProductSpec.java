@@ -33,8 +33,8 @@ public class CgiProductSpec {
             .basePath(cgiBasePath)
             .contentType("multipart/form-data")
             .multiPart("code", "4810128003311")
-            .multiPart("user_id", "etamki")
-            .multiPart("password", "Testproject")
+            .multiPart("user_id", "etamki")//брать из проперти
+            .multiPart("password", "Tesrtpoject")//брать из проперти
             .log().uri()
             .log().method()
             .log().body();
@@ -50,8 +50,8 @@ public class CgiProductSpec {
             .basePath(cgiBasePath)
             .contentType("multipart/form-data")
             .multiPart("code", "")
-            .multiPart("user_id", "etamki")
-            .multiPart("password", "Testproject")
+            .multiPart("user_id", "etamki")//брать из проперти
+            .multiPart("password", "Testproject")//брать из проперти
             .log().uri()
             .log().method()
             .log().body();
