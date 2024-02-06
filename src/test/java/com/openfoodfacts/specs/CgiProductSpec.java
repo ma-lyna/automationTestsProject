@@ -13,7 +13,7 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 public class CgiProductSpec {
     public static RequestSpecification cropPhotoRequestSpec = with()
             .filter(withCustomTemplates())
-            .baseUri(cgiBaseURI)
+            .baseUri(baseURI)
             .basePath(cgiBasePath)
             .contentType("multipart/form-data")
             .multiPart("code", "04963406")
@@ -29,7 +29,7 @@ public class CgiProductSpec {
             .build();
     public static RequestSpecification addProductRequestSpec = with()
             .filter(withCustomTemplates())
-            .baseUri(cgiBaseURI)
+            .baseUri(baseURI)
             .basePath(cgiBasePath)
             .contentType("multipart/form-data")
             .multiPart("code", "4810128003311")
@@ -46,7 +46,7 @@ public class CgiProductSpec {
 
     public static RequestSpecification notAddProductRequestSpec = with()
             .filter(withCustomTemplates())
-            .baseUri(cgiBaseURI)
+            .baseUri(baseURI)
             .basePath(cgiBasePath)
             .contentType("multipart/form-data")
             .multiPart("code", "")

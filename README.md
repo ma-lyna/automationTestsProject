@@ -1,6 +1,6 @@
 # UI и API autotests for [openfoodfacts](https://world.openfoodfacts.org/)
 
-<img alt="openfoodfacts" src="readme/screenshots/openfoodfacts.png">
+<img alt="openfoodfacts" src="media/screenshots/openfoodfacts.png">
 
 ## <a id="list"></a> Content 
 
@@ -27,17 +27,17 @@
 
 ## <a id="tools"></a> Tools and technologies
 <p align="center">
-<a href="https://www.jetbrains.com/idea/"><img width="50" alt="IDEA" src="readme/icons/Intelij_IDEA.svg"></a>
-<a href="https://www.java.com/"><img width="50" alt="JAVA" src="readme/icons/Java.svg"></a>
-<a href="https://github.com/"><img width="50" alt="Github" src="readme/icons/Github.svg"></a>
-<a href="https://junit.org/junit5/"><img width="50" alt="JUnit5" src="readme/icons/JUnit5.svg"></a>
-<a href="https://gradle.org/"><img width="50" alt="Gradle" src="readme/icons/Gradle.svg"></a>
-<a href="https://selenide.org/"><img width="50" alt="Selenide" src="readme/icons/Selenide.svg"></a>
-<a href="https://aerokube.com/selenoid/"><img width="50" alt="Selenoid" src="readme/icons/Selenoid.svg"></a>
-<a href="https://github.com/allure-framework/allure2"><img width="50" alt="Allure" src="readme/icons/Allure.svg"></a>
-<a href="https://qameta.io"><img width="50" alt="TestOps" src="readme/icons/TestOps.svg"></a>
-<a href="https://www.jenkins.io/"><img width="50" alt="Jenkins" src="readme/icons/Jenkins.svg"></a>
-<a href="https://telegram.org/"><img width="50" alt="Telegram" src="readme/icons/Telegram.svg"></a>
+<a href="https://www.jetbrains.com/idea/"><img width="50" alt="IDEA" src="media/icons/Intelij_IDEA.svg"></a>
+<a href="https://www.java.com/"><img width="50" alt="JAVA" src="media/icons/Java.svg"></a>
+<a href="https://github.com/"><img width="50" alt="Github" src="media/icons/Github.svg"></a>
+<a href="https://junit.org/junit5/"><img width="50" alt="JUnit5" src="media/icons/JUnit5.svg"></a>
+<a href="https://gradle.org/"><img width="50" alt="Gradle" src="media/icons/Gradle.svg"></a>
+<a href="https://selenide.org/"><img width="50" alt="Selenide" src="media/icons/Selenide.svg"></a>
+<a href="https://aerokube.com/selenoid/"><img width="50" alt="Selenoid" src="media/icons/Selenoid.svg"></a>
+<a href="https://github.com/allure-framework/allure2"><img width="50" alt="Allure" src="media/icons/Allure.svg"></a>
+<a href="https://qameta.io"><img width="50" alt="TestOps" src="media/icons/TestOps.svg"></a>
+<a href="https://www.jenkins.io/"><img width="50" alt="Jenkins" src="media/icons/Jenkins.svg"></a>
+<a href="https://telegram.org/"><img width="50" alt="Telegram" src="media/icons/Telegram.svg"></a>
 </p>
 
 
@@ -126,11 +126,11 @@ clean apiAuto_test "-Dname=${NAME}"
 
 ## <a id="jenkins"></a> Job for UI tests in [Jenkins](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/)
 
-<img alt="Jenkins_screenshot_ui" src="readme/screenshots/Jenkins_ui.png">
+<img alt="Jenkins_screenshot_ui" src="media/screenshots/Jenkins_ui.png">
 
 ## <a id="jenkins"></a> Job for API tests in [Jenkins](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/)
 
-<img alt="Jenkins_screenshot_api" src="readme/screenshots/Jenkins_api.png">
+<img alt="Jenkins_screenshot_api" src="media/screenshots/Jenkins_api.png">
 
 <a href="#list">Content</a>
 
@@ -138,11 +138,11 @@ Allure Reports
 
 ## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/021-marinka_k-projectUITests/20/allure/) UI reports
 
-<img alt="AllureReport_screenshot" src="readme/screenshots/AllureReportUI.png">
+<img alt="AllureReport_screenshot" src="media/screenshots/AllureReportUI.png">
 
 ## <a id="allure"></a> [Allure](https://jenkins.autotests.cloud/job/020-marinka_k-apiFinalProject/25/allure/) API reports
 
-<img alt="AllureReportTest_screenshot" src="readme/screenshots/AllureReportUI.png">
+<img alt="AllureReportTest_screenshot" src="media/screenshots/AllureReportUI.png">
 
 <a href="#list">Content</a>
 
@@ -150,10 +150,10 @@ Allure Reports
 
 Тelegram notifications
 
-<img alt="Telegram_screenshot" src="readme/screenshots/Telegram.jpeg">
+<img alt="Telegram_screenshot" src="media/screenshots/Telegram.jpeg">
 
 <a href="#list">Content</a>
 
 ## <a id="testops"> Integration with [Allure TestOps](https://allure.autotests.cloud/project/3840/test-cases/27753?treeId=0)
   
-<img alt="AllureTestOpsLaunches_screenshot" src="readme/screenshots/AllureTestOps.png">
+<img alt="AllureTestOpsLaunches_screenshot" src="media/screenshots/AllureTestOps.png">
