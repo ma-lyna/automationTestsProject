@@ -12,19 +12,19 @@ public class GetAllergLombokModel {
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Product {
-        private Panels knowledge_panels;
+        private Panels knowledgePanels;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Panels {
-        private Sugars nutrient_level_sugars;
+        private Sugars nutrientLevelSugars;
     }
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Sugars {
-        private Titlelement title_element;
+        private Titlelement titleElement;
     }
 
     @Data

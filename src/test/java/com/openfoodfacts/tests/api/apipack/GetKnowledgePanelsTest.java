@@ -26,7 +26,7 @@ public class GetKnowledgePanelsTest {
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(GetAllergLombokModel.class));
         step("Check sugars in high quantity", () ->
-                assertEquals("Sugars in high quantity (56.3%)", response.getProduct().getKnowledge_panels().getNutrient_level_sugars().getTitle_element().getTitle()));
+                assertEquals("Sugars in high quantity (56.3%)", response.getProduct().getKnowledgePanels().getNutrientLevelSugars().getTitleElement().getTitle()));
     }
 
     @Test

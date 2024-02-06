@@ -24,7 +24,7 @@ public class AddProductTests {
                         .spec(CgiProductSpec.addProductResponseSpec)
                         .extract().as(AddProductResponseLombokModel.class));
         step("Verify fields saved", () ->
-                assertEquals("fields saved", response.getStatus_verbose()));
+                assertEquals("fields saved", response.getStatusVerbose()));
         step("Check status", () ->
              assertEquals(1, response.getStatus()));
    }

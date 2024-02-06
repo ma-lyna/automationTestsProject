@@ -6,5 +6,5 @@ import lombok.Data;
 public class NotGetProductNameLombokModel {
     String code;
     Integer status;
-    String status_verbose;
+    String statusVerbose;
 }

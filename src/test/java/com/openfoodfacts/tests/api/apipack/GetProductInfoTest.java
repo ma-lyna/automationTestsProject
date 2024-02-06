@@ -24,7 +24,7 @@ public class GetProductInfoTest {
                             .spec(ApiProductSpec.getProductNameResponseSpec)
                             .extract().as(GetProductNameLombokModel.class));
         step("Check name", () ->
-                    assertEquals("Nutella", response.getProduct().getProduct_name()));
+                    assertEquals("Nutella", response.getProduct().getProductName()));
     }
 
     @Test

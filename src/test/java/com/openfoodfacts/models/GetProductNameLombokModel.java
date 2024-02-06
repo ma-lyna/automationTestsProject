@@ -7,12 +7,12 @@ import lombok.Data;
 public class GetProductNameLombokModel {
     String code;
     Integer status;
-    String status_verbose;
+    String statusVerbose;
     private Product product;
 
     @Data
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Product {
-        private String product_name;
+        private String productName;
     }
 }
