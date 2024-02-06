@@ -18,10 +18,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
 
-
-
-
-
     @BeforeAll
     static void beforeAll() {
         WebProvider.config();
@@ -35,7 +31,6 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
     }
-
 
     @BeforeEach
     void beforeEach() {
