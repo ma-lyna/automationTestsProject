@@ -29,7 +29,7 @@ public class SearchTests extends TestBase {
             searchPage.checkSearchResults();
         });
         step("Verify the displayed result is 'Nutella' result", () -> {
-            searchPage.checkNutellaResult();
+            searchPage.checkProductResult("Nutella");
         });
     }
 

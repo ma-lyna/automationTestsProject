@@ -12,7 +12,7 @@ public class SearchPage {
             searchInput = $(".columns input[name ='search_terms']"),
             searchBtn = $(".button.postfix"),
             searchResults = $(".row"),
-            nutellaResult = $(".list_product_name.v-space-tiny"),
+            nutellaResult = $(".list_product_name"),
             searchResult = $("#preferences_switch_in_list_of_products_switch"),
             infoPage = $(byText("Poor match 31%"));
 
@@ -35,8 +35,8 @@ public class SearchPage {
         return this;
     }
 
-    public SearchPage checkNutellaResult() {
-        nutellaResult.shouldHave(text("Nutella"));
+    public SearchPage checkProductResult(String product) {
+        nutellaResult.shouldHave(text(product));
 
         return this;
     }
