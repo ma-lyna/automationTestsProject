@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class GetAllergLombokModel {
+public class GetAllergModel {
 
     private Product product;
 

@@ -4,9 +4,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class NotAddProductResponseLombokModel {
-        Integer status;
+public class NotAddProductResponseModel {
+        private Integer status;
         @JsonProperty("status_verbose")
-        String statusVerbose;
+        private String statusVerbose;
 }
 

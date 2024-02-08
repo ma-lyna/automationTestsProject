@@ -5,10 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class GetProductNameLombokModel {
-    String code;
-    Integer status;
-    String statusVerbose;
+public class GetProductNameModel {
+    private String code;
+    private Integer status;
+    private String statusVerbose;
     private Product product;
 
     @Data

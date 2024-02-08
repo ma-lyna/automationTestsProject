@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
 @Data
-public class CropPhotoResponseLombokModel {
+public class CropPhotoResponseModel {
     private String imagefield, status;
     private Image image;
     @lombok.Data

@@ -1,6 +1,6 @@
 package com.openfoodfacts.tests.api.cgipack;
 
-import com.openfoodfacts.models.AddProductResponseLombokModel;
+import com.openfoodfacts.models.AddProductResponseModel;
 import com.openfoodfacts.specs.CgiProductSpec;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -16,13 +16,13 @@ public class AddProductTests {
     @Tag("apiAuto")
     @DisplayName("A new product is successfully added")
     void newProductAddedTest() {
-        AddProductResponseLombokModel response = step("Send request", () ->
+        AddProductResponseModel response = step("Send request", () ->
                 given(CgiProductSpec.addProductRequestSpec)
                         .when()
                         .post("/product_jqm2.pl")
                         .then()
                         .spec(CgiProductSpec.addProductResponseSpec)
-                        .extract().as(AddProductResponseLombokModel.class));
+                        .extract().as(AddProductResponseModel.class));
         step("Verify fields saved", () ->
                 assertEquals("fields saved", response.getStatusVerbose()));
         step("Check status", () ->
@@ -33,13 +33,13 @@ public class AddProductTests {
     @Tag("apiAuto")
     @DisplayName("A new product is not added")
     void newProductNotAddedTest() {
-        AddProductResponseLombokModel response = step("Send request", () ->
+        AddProductResponseModel response = step("Send request", () ->
                 given(CgiProductSpec.notAddProductRequestSpec)
                         .when()
                         .post("/product_jqm2.pl")
                         .then()
                         .spec(CgiProductSpec.notAddProductResponseSpec)
-                        .extract().as(AddProductResponseLombokModel.class));
+                        .extract().as(AddProductResponseModel.class));
         step("Check status", () ->
                 assertEquals(0, response.getStatus()));
     }

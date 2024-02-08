@@ -1,6 +1,6 @@
 package com.openfoodfacts.tests.api.cgipack;
 
-import com.openfoodfacts.models.CropPhotoResponseLombokModel;
+import com.openfoodfacts.models.CropPhotoResponseModel;
 import com.openfoodfacts.specs.CgiProductSpec;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -15,13 +15,13 @@ public class CropPhotoTest {
     @Tag("apiAuto")
     @DisplayName("Photo is successfully cropped")
     void photoIsCroppedTest() {
-        CropPhotoResponseLombokModel response = step("Send request", () ->
+        CropPhotoResponseModel response = step("Send request", () ->
                 given(CgiProductSpec.cropPhotoRequestSpec)
                         .when()
                         .post("/product_image_crop.pl")
                         .then()
                         .spec(CgiProductSpec.cropPhotoResponseSpec)
-                        .extract().as(CropPhotoResponseLombokModel.class));
+                        .extract().as(CropPhotoResponseModel.class));
         step("Check imagefield", () ->
                 assertEquals("front_en", response.getImagefield()));
     }
