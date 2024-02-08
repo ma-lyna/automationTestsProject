@@ -2,7 +2,6 @@ package com.openfoodfacts.tests.api.apipack;
 
 import com.openfoodfacts.models.ErrorResponseModel;
 import com.openfoodfacts.models.GetProductNameModel;
-import com.openfoodfacts.models.NotGetProductNameModel;
 import com.openfoodfacts.specs.ApiProductSpec;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
