@@ -8,6 +8,7 @@ import lombok.Data;
 public class GetProductNameModel {
     private String code;
     private Integer status;
+    @JsonProperty("status_verbose")
     private String statusVerbose;
     private Product product;
 
