@@ -16,10 +16,8 @@ import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class GetKnowledgePanelsTest {
-
-    String endpoint = "v2/product/";
-
+public class GetKnowledgePanelsTest extends BaseTest {
+    
     @Test
     @Tag("apiAuto")
     @Severity(SeverityLevel.NORMAL)

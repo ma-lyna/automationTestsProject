@@ -14,9 +14,7 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GetProductInfoTest {
-
-    String endpoint = "v2/product/";
+public class GetProductInfoTest extends BaseTest {
 
     @Test
     @Tag("apiAuto")
