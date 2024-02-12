@@ -49,13 +49,11 @@ public class GetKnowledgePanelsTest extends BaseTest {
                         .then()
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(ErrorResponseModel.class));
-//        step("Check status", () ->
-//                assertAll (0, response.getStatus()));
-        step("Verify fields saved", () ->
-                assertEquals("no code or invalid code", response.getStatusVerbose()));
-        step("Check status", () ->
-                assertEquals(0, response.getStatus()));
-
+        step("Check response", () ->
+                assertAll (
+                         () -> assertEquals("no code or invalid code", response.getStatusVerbose()),
+                         () -> assertEquals(0, response.getStatus()))
+        );
     }
 }
 
