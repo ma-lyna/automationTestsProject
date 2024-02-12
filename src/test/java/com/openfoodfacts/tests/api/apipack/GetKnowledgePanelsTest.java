@@ -13,6 +13,7 @@ import org.junit.jupiter.api.Test;
 import static com.openfoodfacts.specs.ApiProductSpec.getAllergensRequestSpec;
 import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
+import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -37,9 +38,9 @@ public class GetKnowledgePanelsTest extends BaseTest {
 
     @Test
     @Tag("apiAuto")
-    @Severity(SeverityLevel.MINOR)
+    @Severity(SeverityLevel.TRIVIAL)
     @Owner("ma-lyna")
-    @DisplayName("Information about allergens is not shown in case of invalid product id")
+    @DisplayName("Error behaviour if if asking for allergens of invalid product id")
     void notGetAllergens() {
         ErrorResponseModel response = step("Send request", () ->
                 given(getAllergensRequestSpec)
@@ -48,8 +49,13 @@ public class GetKnowledgePanelsTest extends BaseTest {
                         .then()
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(ErrorResponseModel.class));
+//        step("Check status", () ->
+//                assertAll (0, response.getStatus()));
+        step("Verify fields saved", () ->
+                assertEquals("no code or invalid code", response.getStatusVerbose()));
         step("Check status", () ->
                 assertEquals(0, response.getStatus()));
+
     }
 }
 
