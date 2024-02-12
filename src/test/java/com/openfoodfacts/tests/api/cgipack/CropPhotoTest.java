@@ -2,6 +2,9 @@ package com.openfoodfacts.tests.api.cgipack;
 
 import com.openfoodfacts.models.CropPhotoResponseModel;
 import com.openfoodfacts.specs.CgiProductSpec;
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,6 +16,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class CropPhotoTest {
     @Test
     @Tag("apiAuto")
+    @Severity(SeverityLevel.BLOCKER)
+    @Owner("ma-lyna")
     @DisplayName("Photo is successfully cropped")
     void photoIsCroppedTest() {
         CropPhotoResponseModel response = step("Send request", () ->

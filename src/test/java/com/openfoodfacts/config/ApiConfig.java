@@ -11,4 +11,10 @@ public interface ApiConfig extends Config  {
 
         @Key("cgiBasePath")
         String cgiBasePath();
+
+        @Key("user_id")
+        String userId();
+
+        @Key("password")
+        String password();
 }
