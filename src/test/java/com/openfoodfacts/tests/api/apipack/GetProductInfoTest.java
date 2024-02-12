@@ -25,7 +25,7 @@ public class GetProductInfoTest extends BaseTest {
         GetProductNameModel response = step("Send request", () ->
                     given(ApiProductSpec.getProductNameRequestSpec)
                             .when()
-                            .get(endpoint + "3017620422003")
+                            .get(endpoint + idNutella)
                             .then()
                             .spec(ApiProductSpec.getProductNameResponseSpec)
                             .extract().as(GetProductNameModel.class));
@@ -42,7 +42,7 @@ public class GetProductInfoTest extends BaseTest {
         ErrorResponseModel response = step("Send request", () ->
                 given(ApiProductSpec.getProductNameRequestSpec)
                         .when()
-                        .get(endpoint + "333")
+                        .get(endpoint + invalidProductId)
                         .then()
                         .spec(ApiProductSpec.getProductNameResponseSpec)
                         .extract().as(ErrorResponseModel.class));

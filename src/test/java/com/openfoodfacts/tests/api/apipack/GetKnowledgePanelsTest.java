@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class GetKnowledgePanelsTest extends BaseTest {
-    
+
     @Test
     @Tag("apiAuto")
     @Severity(SeverityLevel.NORMAL)
@@ -27,7 +27,7 @@ public class GetKnowledgePanelsTest extends BaseTest {
         GetAllergModel response = step("Send request", () ->
                 given(ApiProductSpec.getAllergensRequestSpec)
                         .when()
-                        .get(endpoint + "3017620422003")
+                        .get(endpoint + idNutella)
                         .then()
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(GetAllergModel.class));
@@ -44,7 +44,7 @@ public class GetKnowledgePanelsTest extends BaseTest {
         ErrorResponseModel response = step("Send request", () ->
                 given(getAllergensRequestSpec)
                         .when()
-                        .get(endpoint + "333")
+                        .get(endpoint + invalidProductId)
                         .then()
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(ErrorResponseModel.class));
