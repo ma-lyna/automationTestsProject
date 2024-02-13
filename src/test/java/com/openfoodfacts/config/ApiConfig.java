@@ -17,4 +17,10 @@ public interface ApiConfig extends Config  {
 
         @Key("password")
         String password();
+
+        @Key("category")
+        String category();
+
+        @Key("productCode")
+        String productCode();
 }

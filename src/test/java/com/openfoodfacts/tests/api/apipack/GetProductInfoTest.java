@@ -14,18 +14,18 @@ import static io.qameta.allure.Allure.step;
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class GetProductInfoTest extends BaseTest {
+public class GetProductInfoTest extends ApiBaseTest {
 
     @Test
     @Tag("apiAuto")
     @Severity(SeverityLevel.BLOCKER)
     @Owner("ma-lyna")
     @DisplayName("Get product name for a particular product id")
-    void getProductName() {
+    void getProductNameShouldReturnCorrectValue() {
         GetProductNameModel response = step("Send request", () ->
                     given(ApiProductSpec.getProductNameRequestSpec)
                             .when()
-                            .get(endpoint + idNutella)
+                            .get(endpoint + productId)
                             .then()
                             .spec(ApiProductSpec.getProductNameResponseSpec)
                             .extract().as(GetProductNameModel.class));

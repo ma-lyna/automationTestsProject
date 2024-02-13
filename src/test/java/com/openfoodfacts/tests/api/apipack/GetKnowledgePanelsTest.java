@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-public class GetKnowledgePanelsTest extends BaseTest {
+public class GetKnowledgePanelsTest extends ApiBaseTest {
 
     @Test
     @Tag("apiAuto")
@@ -28,7 +28,7 @@ public class GetKnowledgePanelsTest extends BaseTest {
         GetAllergModel response = step("Send request", () ->
                 given(ApiProductSpec.getAllergensRequestSpec)
                         .when()
-                        .get(endpoint + idNutella)
+                        .get(endpoint + productId)
                         .then()
                         .spec(ApiProductSpec.getAllergensResponseSpec)
                         .extract().as(GetAllergModel.class));

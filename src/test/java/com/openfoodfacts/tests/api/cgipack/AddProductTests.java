@@ -50,6 +50,25 @@ public class AddProductTests {
         step("Check status", () ->
                 assertEquals(0, response.getStatus()));
     }
+
+    @Test
+    @Tag("apiAuto")
+    @Severity(SeverityLevel.CRITICAL)
+    @Owner("ma-lyna")
+    @DisplayName("Successful update of the product")
+    void successfulProductUpdate() {
+        AddProductResponseModel response = step("Send request", () ->
+                given(CgiProductSpec.updateProductRequestSpec)
+                        .when()
+                        .post("/product_jqm2.pl")
+                        .then()
+                        .spec(CgiProductSpec.updateProductResponseSpec)
+                        .extract().as(AddProductResponseModel.class));
+        step("Verify fields saved", () ->
+                assertEquals("fields saved", response.getStatusVerbose()));
+        step("Check status", () ->
+                assertEquals(1, response.getStatus()));
+    }
 }
 
 
