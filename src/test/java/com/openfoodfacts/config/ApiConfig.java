@@ -23,4 +23,7 @@ public interface ApiConfig extends Config  {
 
         @Key("productCode")
         String productCode();
+
+        @Key("productInvalidCode")
+        String productInvalidCode();
 }
