@@ -30,7 +30,7 @@ public class GetProductInfoTest extends ApiBaseTest {
                             .spec(ApiProductSpec.getProductNameResponseSpec)
                             .extract().as(GetProductNameModel.class));
         step("Check name", () ->
-                    assertEquals("Nutella", response.getProduct().getProductName()));
+                    assertEquals(name, response.getProduct().getProductName()));
     }
 
     @Test

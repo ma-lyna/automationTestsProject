@@ -26,4 +26,7 @@ public interface ApiConfig extends Config  {
 
         @Key("productInvalidCode")
         String productInvalidCode();
+
+        @Key("randomPassword")
+        String randomPassword();
 }

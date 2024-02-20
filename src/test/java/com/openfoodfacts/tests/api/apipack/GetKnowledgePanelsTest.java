@@ -57,6 +57,4 @@ public class GetKnowledgePanelsTest extends ApiBaseTest {
     }
 }
 
-//helllo
-
 

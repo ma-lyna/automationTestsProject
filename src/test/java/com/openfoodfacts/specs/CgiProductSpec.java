@@ -13,6 +13,7 @@ import static io.restassured.filter.log.LogDetail.STATUS;
 
 public class CgiProductSpec {
     private static ApiConfig config = ConfigFactory.create(ApiConfig.class);
+    private final static TestData testData = new TestData();
 
     public static RequestSpecification updateProductRequestSpec = with()
             .filter(withCustomTemplates())
@@ -49,4 +50,42 @@ public class CgiProductSpec {
             .log(BODY)
             .expectStatusCode(200)
             .build();
+
+    public static RequestSpecification updateProductWithoutCredsRequestSpec = with()
+            .filter(withCustomTemplates())
+            .baseUri(config.baseURI())
+            .basePath(config.cgiBasePath())
+            .contentType("multipart/form-data")
+            .multiPart("code", config.productCode())
+            .multiPart("user_id", "")
+            .multiPart("password","")
+            .multiPart("categories",config.category())
+            .log().uri()
+            .log().method()
+            .log().body();
+    public static ResponseSpecification updateProductWithoutCredsResponseSpec = new ResponseSpecBuilder()
+            .log(STATUS)
+            .log(BODY)
+            .expectStatusCode(200)
+            .build();
+
+    public static RequestSpecification updateProductIncorrectPassRequestSpec = with()
+            .filter(withCustomTemplates())
+            .baseUri(config.baseURI())
+            .basePath(config.cgiBasePath())
+            .contentType("multipart/form-data")
+            .multiPart("code", config.productCode())
+            .multiPart("user_id", config.userId())
+            .multiPart("password", TestData.randomPassword())
+            .multiPart("categories",config.category())
+            .log().uri()
+            .log().method()
+            .log().body();
+    public static ResponseSpecification updateProductIncorrectPassResponseSpec = new ResponseSpecBuilder()
+            .log(STATUS)
+            .log(BODY)
+            .expectStatusCode(403)
+            .expectContentType("text/html")
+            .build();
+
 }
