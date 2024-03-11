@@ -12,7 +12,7 @@ public class ContributePage {
             btnSkillForm = $(byText("Contributors Skill Pool form in ENG/FR"));
 
     public ContributePage openContributePage() {
-        open("/contribute/");
+        open("https://world.openfoodfacts.org/contribute/");
 
         return this;
     }

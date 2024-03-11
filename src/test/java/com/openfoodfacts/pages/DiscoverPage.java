@@ -13,7 +13,7 @@ public class DiscoverPage {
             productsSearchText = $(".small-12.column :nth-child(2)");
 
     public DiscoverPage openDiscoverPage() {
-        open("/discover/");
+        open("https://world.openfoodfacts.org/discover/");
 
         return this;
     }

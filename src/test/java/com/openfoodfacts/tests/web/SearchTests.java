@@ -19,6 +19,9 @@ public class SearchTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Displaying of 'Nutella' results after successful search")
     void checkSuccessfulSearch() {
+        step("Open the 'Main' page", () -> {
+            searchPage.openSearchPage();
+        });
         step("Fill in the 'Search' field with 'Nutella'", () -> {
             searchPage.fillInSearch("Nutella");
         });
@@ -39,6 +42,9 @@ public class SearchTests extends TestBase {
     @Owner("ma-lyna")
     @DisplayName("Observe displaying of the banner 'Poor match 31%'")
     void checkProductBanner() {
+        step("Open the 'Main' page", () -> {
+            searchPage.openSearchPage();
+        });
         step("Fill in the 'Search' field with 'Nutella'", () -> {
             searchPage.fillInSearch("Nutella");
         });

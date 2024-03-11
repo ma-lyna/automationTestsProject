@@ -17,7 +17,6 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
-
     @BeforeAll
     static void beforeAll() {
         WebProvider.config();
@@ -31,28 +30,20 @@ public class TestBase {
 
         Configuration.browserCapabilities = capabilities;
     }
-
     @BeforeEach
     void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-    open("https://world.openfoodfacts.org");
     }
-
     @AfterEach
     void afterEach() {
         Attach.screenShotAs("Last screenshot");
         Attach.pageSource();
-        Attach.browserConsoleLog();
+        String browserProperty = System.getProperty("browser");
+        if (browserProperty != null && !browserProperty.equalsIgnoreCase("Mozilla")) {
+            Attach.browserConsoleLog();
+        }
         Attach.addVideo();
 
         Selenide.closeWebDriver();
     }
-
-
-
-
-
-
-
-
 }

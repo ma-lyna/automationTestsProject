@@ -11,7 +11,7 @@ public class AppPage {
             qrCode = $("img[alt ='QR-Code linking to https://world.openfoodfacts.org/open-food-facts-mobile-app']");
 
     public AppPage openAppPage() {
-        open("/open-food-facts-mobile-app/");
+        open("https://world.openfoodfacts.org/open-food-facts-mobile-app/");
 
         return this;
     }
